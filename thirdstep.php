@@ -1,3 +1,5 @@
+<?php require_once "proto/proto.php";
+;?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -9,7 +11,7 @@
 </head>
 
 <body>
-<form class="box login">
+<form action="<?=$var;?>" class="box login">
     <fieldset class="boxBody">
         <label>
             Личные качества

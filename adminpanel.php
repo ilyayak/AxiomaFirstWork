@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title><??></title>
+    <title></title>
     <meta charset="UTF-8"/>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">

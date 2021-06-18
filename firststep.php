@@ -11,7 +11,7 @@ session_start();
 </head>
 
 <body>
-<form action="/vendor/signup.php" method="post" class="box login">
+<form action="<?=$var;?>" method="post" class="box login">
     <fieldset class="boxBody">
 
         <select type="radio" id="male" name="male">Ваш пол
