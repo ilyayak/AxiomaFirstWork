@@ -13,6 +13,10 @@
 body{
   background:#eff3f6;
 }
+.button{
+    color: white;
+    background: darkred;
+}
 .box
 {
     background:#fefefe;
@@ -124,6 +128,7 @@ display: flex;
 .box a:active{color:#f84747;}
 .btnLogin
 {
+    display: none;
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
     border-radius:15px;
@@ -176,5 +181,17 @@ footer#main{
 .section__checkbox{
     display: flex;
     flex-direction: column;
+}
+.block.block__one{
 
+
+}
+.block.block__two{
+    display: none;
+}
+.block.block__three{
+    display: none;
+}
+.block.block__four{
+    display: none;
 }

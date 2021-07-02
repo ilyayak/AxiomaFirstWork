@@ -3,15 +3,34 @@
 require_once "connect.php";
 
 
-
-$name = $_POST['name'];
+$name = $_SESSION['name'];
 $second_name = $_POST['second_name'];
 $third_name = $_POST['third_name'];
 $birthday = $_POST['birthday'];
 $avatar = $_FILES['avatar'];
-echo '<pre>';print_r($_POST );echo '</pre>';
-$sql = "INSERT INTO b_fields (name, second_name,third_name,birthday,avatar)
-        VALUES ('$name','$second_name','$third_name','$birthday','$avatar')";
+$perseverance = $_POST['perseverance'];
+$neatness = $_POST['neatness'];
+$selflearning = $_POST['selflearning'];
+$industriousness = $_POST['industriousness'];
+$photo = $_FILES['photo'];
+$photos = $_FILES['photos'];
+echo '<pre>';
+print_r($_FILES);
+echo '</pre>';
+var_dump($_POST);
+$sql = "INSERT INTO b_fields (name, second_name,third_name,birthday,avatar,perseverance,
+neatness,
+selflearning,
+industriousness,
+photo,
+photos
+)
+        VALUES ('$name','$second_name','$third_name','$birthday','$avatar','$perseverance',
+'$neatness',
+'$selflearning',
+'$industriousness',
+'$photo',
+'$photos')";
 
 //$imagename=$_avatarS["avatar"]["name"];
 //echo '<pre>';print_r($_FILES);echo '<pre>';
@@ -31,11 +50,11 @@ if ($conn->query($sql) === true) {
 }
 echo
 $sql = "SELECT * FROM b_fields";
-if($result = $conn->query($sql)){
+if ($result = $conn->query($sql)) {
     $rowsCount = $result->num_rows; // количество полученных строк
     echo "<p>Получено объектов: $rowsCount</p>";
     echo "<table><tr><th>Id</th><th>Имя</th><th>Возраст</th></tr>";
-    foreach($result as $row){
+    foreach ($result as $row) {
         echo "<tr>";
         echo "<td>" . $row["second_name"] . "</td>";
         echo "<td>" . $row["name"] . "</td>";
@@ -44,11 +63,11 @@ if($result = $conn->query($sql)){
     }
     echo "</table>";
     $result->free();
-} else{
+} else {
     echo "Ошибка: " . $conn->error;
 }
 $conn->close();
 
 ?>
-
-
+<!---->
+<!---->
