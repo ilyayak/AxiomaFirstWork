@@ -45,8 +45,6 @@ buttonf3.addEventListener("click",function (){
 });
 
 
-
-
 let buttonb4 = document.querySelector(".buttonb__four");
 buttonb4.addEventListener("click",function (){
     event.preventDefault();
@@ -57,8 +55,10 @@ let buttonf4 = document.querySelector(".button__four");
 buttonf4.addEventListener("click",function (){
     event.preventDefault();
 });
-
-
-
-
-
+//Сделать цикл для кнопки переключение страницы, что выше
+//1.Конкатенация к для переменной(увеличение индекса)button . $number
+//
+//
+//
+//
+//

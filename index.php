@@ -10,11 +10,11 @@
 </head>
 
 <body>
-<form action ="/vendor/signup.php" method="post" class="box login" enctype="multipart/form-data">
+<form action="/vendor/signup.php" method="post" class="box login" enctype="multipart/form-data">
     <fieldset class="boxBody">
 
 
-            <div class="block block__one" id="1">
+        <div class="block block__one" id="1">
             <select type="radio" id="male" name="male">Ваш пол
                 <option value="1">М</option>
                 <option value="2">Ж</option>
@@ -30,22 +30,19 @@
         </div>
 
 
-
         <div class="block block__two" id="2">
             <label>Личные качества</label>
             <input type="text" tabindex="1" placeholder="">
             <div class="section section__checkbox">
                 <label>Навыки</label>
-                <input type="checkbox" name="perseverance" >Усидчивость
+                <input type="checkbox" name="perseverance">Усидчивость
                 <input type="checkbox" name="neatness">опрятность
                 <input type="checkbox" name="selflearning">самообучаемость
-                <input type="checkbox" name="industriousness" >трудолюбие
+                <input type="checkbox" name="industriousness">трудолюбие
             </div>
             <button class="button buttonb__two">Назад</button>
             <button class="button buttonf__two">Дальше</button>
         </div>
-
-
 
 
         <div class="block block__three" id="3">
@@ -56,21 +53,17 @@
         </div>
 
 
-
-
         <div class="block block__four" id="4">
             <label>Загрузите фотографию</label>Назад
             <input type="file" name="photos">
             <button class="button buttonb__four">Назад</button>
-            <button class="button button__four" value="start" >
         </div>
-
 
 
         <?= $proto ?>
     </fieldset>
     <footer>
-     <input type="submit" class="btnLogin" value="start">
+        <input type="submit" class="btnLogin" value="start">
     </footer>
 </form>
 <footer id="main">
