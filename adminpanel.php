@@ -1,16 +1,13 @@
-
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title></title>
-    <meta charset="UTF-8"/>
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/structure.css">
-</head>
-<body>
-
-<footer >
-</footer>
-</body>
-</html>
+<header>
+    <section class="header">
+        <button id="filter" class="header__button">
+            <a href="/admin/filter.php">Фильтр</a>
+        </button>
+        <button id="sort" class="header__button">
+            <a href="/admin/sort.php">Сортировка</a>
+        </button>
+        <button id="exit" class="header__button">
+            <a href="/admin/exit.php">выход</a>
+        </button>
+    </section>
+</header>

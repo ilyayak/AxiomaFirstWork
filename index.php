@@ -1,4 +1,3 @@
-<?php require_once "proto/proto.php"; ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,6 +9,7 @@
 </head>
 
 <body>
+<?php require_once 'adminpanel.php'?>
 <form action="/vendor/signup.php" method="post" class="box login" enctype="multipart/form-data">
     <fieldset class="boxBody">
 
@@ -32,7 +32,7 @@
 
         <div class="block block__two" id="2">
             <label>Личные качества</label>
-            <input type="text" tabindex="1" placeholder="">
+            <input type="text"  name="skills" placeholder="">
             <div class="section section__checkbox">
                 <label>Навыки</label>
                 <input type="checkbox" name="perseverance">Усидчивость
@@ -60,12 +60,50 @@
         </div>
 
 
-        <?= $proto ?>
     </fieldset>
     <footer>
-        <input type="submit" class="btnLogin" value="start">
+        <button type="submit" class="btnLogin"> start</button>
     </footer>
 </form>
+<ul class="output-main">
+    <li class="output-main__item">
+        <b>id</b>
+    </li>
+    <li class="output-main__item">
+        <b>id</b>
+    </li>
+    <li class="output-main__item">
+        <b>id</b>
+    </li>
+    <li class="output-main__item">
+        <b>id</b>
+    </li>
+    <li class="output-main__item">
+        <b>id</b>
+    </li>
+</ul>
+<?php
+require_once "vendor/connect.php";
+echo '<ul>';
+$query = $pdo->query('SELECT * FROM `b_fields` ORDER BY `id` DESC');
+while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+    echo '<li class="list">
+          <b>' . $row->name . '</b>
+                                <br>
+                                <b>' . $row->second_name . '</b>
+                                <br>
+                                
+            <b>' . $row->skills . '</b>
+            <a href="/delete.php?id=' . $row->id . '">
+
+                    <button class="btn btn-simple">
+                        Удалить
+                    </button>
+            </a>
+           </li>';
+}
+echo '</ul>';
+?>
 <footer id="main">
 </footer>
 </body>
