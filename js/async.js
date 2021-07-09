@@ -1,12 +1,14 @@
 const loadButton = document.querySelector("#loadButton");
 const result = document.querySelector('#result');
 
+
 loadButton.addEventListener('click', () => {
     event.preventDefault();
     const xhr = new XMLHttpRequest();
 
-    const load = document.createElement('li');
-    xhr.open('POST', 'filter.php');
+
+    xhr.open('POST','index.php');
+    xhr.responseType = "document";
     xhr.send();
     xhr.addEventListener('load', () => {
         if (xhr.status >= 400) {
@@ -16,5 +18,5 @@ loadButton.addEventListener('click', () => {
             result.innerText = xhr.responseText;
         }
     });
-    result.appendChild(load);
+
 });

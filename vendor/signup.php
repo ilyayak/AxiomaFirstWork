@@ -82,9 +82,6 @@ $query->execute($params);
 //print_r($_POST);
 //echo '</pre>';
 
-header('Location:/');
-
-
 //echo '<ul>';
 //$query = $pdo->query('SELECT * FROM `b_fields` ORDER BY `id` DESC');
 //while ($row = $query->fetch(PDO::FETCH_OBJ)) {

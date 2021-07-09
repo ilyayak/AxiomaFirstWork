@@ -10,8 +10,22 @@
   ✰✰✰✰✰✰✰✰✰✰✰✰✰✰✰ 
   
 */
+::-webkit-scrollbar { /* chrome based */
+    width: 0px!important;  /* ширина scrollbar'a */
+    background: transparent!important;  /* опционально */
+}
+
+
 body{
   background:#eff3f6;
+}
+
+.body::-webkit-scrollbar {
+    width: 0!important;
+}
+
+.body {
+    -ms-overflow-style: none!important;
 }
 .button{
     color: white;
@@ -163,6 +177,8 @@ display: flex;
     text-shadow:rgba(0,0,0,0.3) 0 -1px 0px; 
 }
 footer#main{
+    display: flex;
+    align-items: center;
 	position:fixed;
 	left:0;
 	bottom:10px;
@@ -202,4 +218,7 @@ footer#main{
     align-items: center;
     width: auto;
     height: 50px;
+}
+.slow{
+    transition: 1200ms;
 }

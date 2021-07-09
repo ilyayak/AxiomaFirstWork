@@ -4,4 +4,10 @@ function get_categories($link){
     $result= mysqli_query($link,$sql);
     $categories = mysqli_fetch_all($result,MYSQLI_ASSOC);
     return $categories;
+};
+function dump($g){
+    echo '<pre>';
+var_dump($g);
+    echo '</pre>';
+    return ($g);
 }
