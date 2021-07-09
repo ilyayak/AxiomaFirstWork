@@ -10,7 +10,7 @@
 
 <body>
 <?php require_once 'adminpanel.php'?>
-<form action="/vendor/signup.php" method="post" class="box login" enctype="multipart/form-data">
+<form method="post" class="box login" enctype="multipart/form-data">
     <fieldset class="boxBody">
 
 
@@ -59,13 +59,14 @@
             <button class="button buttonb__four">Назад</button>
         </div>
 
-
+        <button  id="loadButton"> sdfgdst</button>
     </fieldset>
     <footer>
-        <button type="submit" class="btnLogin"> start</button>
+        <button type="submit" class="btnLogin" > start</button>
+
     </footer>
 </form>
-<ul class="output-main">
+<ul class="output-main" id="result">
     <li class="output-main__item">
         <b>id</b>
     </li>
@@ -83,30 +84,30 @@
     </li>
 </ul>
 <?php
-require_once "vendor/connect.php";
-echo '<ul>';
-$query = $pdo->query('SELECT * FROM `b_fields` ORDER BY `id` DESC');
-while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-    echo '<li class="list">
-          <b>' . $row->name . '</b>
-                                <br>
-                                <b>' . $row->second_name . '</b>
-                                <br>
-                                
-            <b>' . $row->skills . '</b>
-            <a href="/delete.php?id=' . $row->id . '">
-
-                    <button class="btn btn-simple">
-                        Удалить
-                    </button>
-            </a>
-           </li>';
-}
-echo '</ul>';
-?>
+//require_once "vendor/connect.php";
+//require_once "filter.php";
+//echo '<ul>';
+//$query = $pdo->query('SELECT * FROM `b_fields` ORDER BY `id` DESC');
+//while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+//    echo '<li class="list">
+//          <b>' . $row->name . '</b>
+//                                <br>
+//                                <b>' . $row->second_name . '</b>
+//                                <br>
+//
+//            <a href="/delete.php?id=' . $row->id . '">
+//
+//                    <button class="btn btn-simple">
+//                        Удалить
+//                    </button>
+//            </a>
+//           </li>';
+//}
+//echo '</ul>';
+//?>
 <footer id="main">
 </footer>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="/js/main.js"></script>
+<script src="/js/async.js"></script>
 </html>

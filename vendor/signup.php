@@ -18,7 +18,6 @@ $photo = $_FILES['photo'];
 $photos = $_FILES['photos'];
 
 
-
 //$name = 'Новая категория';
 //$query = "INSERT INTO `b_fields` (`name`) VALUES (:name)";
 //$params = [
@@ -36,7 +35,8 @@ $sql = "INSERT INTO b_fields(  `name`,
                     `perseverance`,
                     `neatness`,
                     `selflearning`,
-                    `industriousness`) VALUES(:name,
+                    `industriousness`) 
+                    VALUES(:name,
                     :skills,
                     :male,
                     :second_name,
@@ -47,13 +47,18 @@ $sql = "INSERT INTO b_fields(  `name`,
                     :selflearning,
                     :industriousness
                     )";
-//$sql = "INSERT INTO `b_fields`( `second_name`, `name`,
-//                    `skills`
+//$sql = "INSERT INTO `b_fields`( `second_name`, `name`
 //                    )
 //        VALUES
-//                     (:second_name,:name,
-//                    :skills
+//                     (:second_name,:name
 //                    )";
+
+//$params =
+//    [':name'=> $name,
+//        ':second_name'=> $second_name
+//
+//    ]
+//;
 $params =
     [':name'=> $name,
         ':second_name'=> $second_name,

@@ -1,7 +1,7 @@
 <header>
     <section class="header">
         <button id="filter" class="header__button">
-            <a href="/admin/filter.php">Фильтр</a>
+            <a href="filter.php">Фильтр</a>
         </button>
         <button id="sort" class="header__button">
             <a href="/admin/sort.php">Сортировка</a>
