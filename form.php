@@ -1,4 +1,6 @@
-<?php $form = '<form method="post" class="box login" enctype="multipart/form-data">
+<?php $form = '<form method="post" class="box login" enctype="multipart/form-data"
+onsubmit="login(event, this)"
+>
     <fieldset class="boxBody">
 
 
@@ -10,8 +12,8 @@
             <label>Фото для Аватара</label>
             <input type="file" name="avatar" multiple>
             <input type="text" name="name"
-                   placeholder="Имя">
-            <input type="text" name="second_name" placeholder="Фамилия ">
+                   placeholder="Имя*" required>
+            <input type="text" name="second_name" placeholder="Фамилия*" required>
             <input type="text" name="third_name" placeholder="Отчество">
             <input type="date" name="birthday" placeholder="Дата рождения">
             <button class="button buttonf__one">Дальше</button>

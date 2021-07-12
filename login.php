@@ -6,6 +6,7 @@
         <div class="block block__one" id="1">
            
             <input type="text" name="login"
+            id="login"
                    placeholder="Логин">
             <input type="password" name="password" placeholder="Пароль ">
         </div>

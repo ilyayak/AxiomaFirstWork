@@ -49,12 +49,14 @@ while($row = $query->fetch(PDO::FETCH_OBJ)){
 }
 
 
+// $massive = fbsql_fetch_assoc($mass);
 $final_array = array();
+dump($massive);
 
 foreach ($mass as $massive)
 {
     $final_array = array_merge($final_array, json_decode(json_encode($massive), true));
-    dump($final_array);
+    dump($massive);
 };
 
 
@@ -64,9 +66,9 @@ foreach ($final_array as $final_arrays){
 dump($final_arrays);
 
 if ($final_arrays["name"] == "dxfgfxcg"){
-    echo "winnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnner"?>
+    echo "winner"?>
 
-    <li class="block" style="color: red">ЖОпа</li>
+    <li class="block" style="color: red"> </li>
 
 
     <?php
