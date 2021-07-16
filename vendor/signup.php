@@ -2,16 +2,16 @@
 
 require_once "connect.php";
 
-$second_name = $_POST['second_name'];
-$third_name = $_POST['third_name'];
-$birthday = $_POST['birthday'];
-$perseverance = $_POST['perseverance'];
-$neatness = $_POST['neatness'];
-$selflearning = $_POST['selflearning'];
-$industriousness = $_POST['industriousness'];
-$male = $_POST['$male'];
-$name = $_POST['name'];
-$skills = $_POST['skills'];
+$second_name = filter_var($_POST['second_name'],FILTER_SANITIZE_STRING);
+$third_name = filter_var($_POST['third_name'],FILTER_SANITIZE_STRING);
+$birthdate = filter_var($_POST['birthdate'],FILTER_SANITIZE_STRING);
+$perseverance = filter_var($_POST['perseverance'],FILTER_SANITIZE_STRING);
+$neatness = filter_var($_POST['neatness'],FILTER_SANITIZE_STRING);
+$selflearning = filter_var($_POST['selflearning'],FILTER_SANITIZE_STRING);
+$industriousness = filter_var($_POST['industriousness'],FILTER_SANITIZE_STRING);
+$male = filter_var($_POST['$male'],FILTER_SANITIZE_STRING);
+$name = filter_var($_POST['name'],FILTER_SANITIZE_STRING);
+$skills = filter_var($_POST['skills'],FILTER_SANITIZE_STRING);
 
 $avatar = $_FILES['avatar'];
 $photo = $_FILES['photo'];
@@ -26,53 +26,53 @@ $photos = $_FILES['photos'];
 //$stmt = $pdo->prepare($query);
 //$stmt->execute($params);
 
-$sql = "INSERT INTO b_fields(  `name`,
-                    `skills`,
-                    `male`,
-                    `second_name`,
-                    `third_name`,
-                    `birthday`,
-                    `perseverance`,
-                    `neatness`,
-                    `selflearning`,
-                    `industriousness`) 
-                    VALUES(:name,
-                    :skills,
-                    :male,
-                    :second_name,
-                    :third_name,
-                    :birthday,
-                    :perseverance,
-                    :neatness,
-                    :selflearning,
-                    :industriousness
-                    )";
-//$sql = "INSERT INTO `b_fields`( `second_name`, `name`
-//                    )
-//        VALUES
-//                     (:second_name,:name
+//$sql = "INSERT INTO b_fields(  `name`,
+//                    `skills`,
+//                    `male`,
+//                    `second_name`,
+//                    `third_name`,
+//                    `birthdate`,
+//                    `perseverance`,
+//                    `neatness`,
+//                    `selflearning`,
+//                    `industriousness`)
+//                    VALUES(:name,
+//                    :skills,
+//                    :male,
+//                    :second_name,
+//                    :third_name,
+//                    :birthdate,
+//                    :perseverance,
+//                    :neatness,
+//                    :selflearning,
+//                    :industriousness
 //                    )";
+$sql = "INSERT INTO `b_fields`( `name`, `second_name`, `male`, `birthdate`
+                   )
+        VALUES
+                     (:name,:second_name, :male , :birthdate)";
 
-//$params =
-//    [':name'=> $name,
-//        ':second_name'=> $second_name
-//
-//    ]
-//;
 $params =
     [':name'=> $name,
         ':second_name'=> $second_name,
-        ':skills' => $skills,
         ':male'=> $male,
+        ':birthdate'=> $birthdate
 
-        ':third_name'=> $third_name,
-        ':birthday'=> $birthday,
-        ':perseverance'=> $perseverance,
-        ':neatness'=> $neatness,
-        ':selflearning'=> $selflearning,
-        ':industriousness'=> $industriousness
     ]
 ;
+//$params =
+//    [':name'=> $name,
+//        ':skills' => $skills,
+//        ':male'=> $male,
+//        ':second_name'=> $second_name,
+//        ':third_name'=> $third_name,
+//        ':birthdate'=> $birthdate,
+//        ':perseverance'=> $perseverance,
+//        ':neatness'=> $neatness,
+//        ':selflearning'=> $selflearning,
+//        ':industriousness'=> $industriousness
+//    ]
+//;
 $query = $pdo->prepare($sql);
 //$query->execute($params);
 
@@ -97,4 +97,4 @@ $query->execute($params);
 //$insert_image="INSERT INTO image_table VALUES('$imagetmp','$imagename')";
 //
 //mysql_query($insert_image);
-
+header("Location:/list.php");

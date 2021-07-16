@@ -1,64 +1,65 @@
-let block1 = document.querySelector(".block__one");
-let block2 = document.querySelector(".block__two");
-let block3 = document.querySelector(".block__three");
-let block4 = document.querySelector(".block__four");
-
-
-
-let buttonf1 = document.querySelector(".buttonf__one");
-buttonf1.addEventListener("click",function (){
-    event.preventDefault();
-    block1.style.display = "none";
-    block2.style.display = "block";
+document.addEventListener("DOMContentLoaded", function (event) {
+    initStepsHandler();
 });
 
+function initStepsHandler() {
+    const button = document.querySelectorAll(".button__step");
+    if (button.length < 1) {
+        return;
+    }
+    console.log(button);
+    const buttons = [...button];
+    buttons.forEach(function (button) {
+        button.addEventListener("click", stepHandler);
+    });
+}
 
 
-
-let buttonb2 = document.querySelector(".buttonb__two");
-buttonb2.addEventListener("click",function (){
+function stepHandler(event) {
     event.preventDefault();
-    block1.style.display = "block";
-    block2.style.display = "none";
-});
-let buttonf2 = document.querySelector(".buttonf__two");
-buttonf2.addEventListener("click",function (){
-    event.preventDefault();
-    block2.style.display = "none";
-    block3.style.display = "block";
-});
+
+    const button = event.target;
+
+    let isBlockValid = true;
+    if (button.dataset.hasOwnProperty("blockValidate")) {
+
+        const blockValidateSelector = button.dataset["blockValidate"];
+        const blockValidate = document.querySelector(blockValidateSelector);
+        isBlockValid = validate(blockValidate);
+    }
+
+    if (isBlockValid) {
+        const blocks = document.querySelectorAll(".block");
+        blocks.forEach(function (block) {
+            block.classList.add("hidden");
+        });
+
+        const blockTarget = document.querySelector(button.dataset["blockTarget"]);
+        if (button.dataset["blockValidate"] ==="#block__three"){
+            const startBtn = document.querySelector(".btnLogin");
+            startBtn.style.display = "block";
+        }
+        blockTarget.classList.remove("hidden");
+    }
+}
+
+function validate(block) {
+    let isValid = true;
+
+    const input = block.querySelectorAll("[data-required='Y']");
+    const inputs = [...input];
+    inputs.forEach(function (input) {
+        input.classList.remove("error");
+        if (input.value.trim().length === 0) {
+            input.classList.add("error");
+            isValid = false;
+        }
+    });
+    return isValid;
+}
+
+// const btnStart = document.querySelector(dataset"block")
 
 
-let buttonb3 = document.querySelector(".buttonb__three");
-buttonb3.addEventListener("click",function (){
-    event.preventDefault();
-    block2.style.display = "block";
-    block3.style.display = "none";
-});
-let buttonf3 = document.querySelector(".buttonf__three");
-buttonf3.addEventListener("click",function (){
-    event.preventDefault();
-    block3.style.display = "none";
-    block4.style.display = "block";
-    const input = document.querySelector(".btnLogin");
-    input.style.display = "block";
-});
 
-
-let buttonb4 = document.querySelector(".buttonb__four");
-buttonb4.addEventListener("click",function (){
-    event.preventDefault();
-    block3.style.display = "block";
-    block4.style.display = "none";
-});
-let buttonf4 = document.querySelector(".button__four");
-buttonf4.addEventListener("click",function (){
-    event.preventDefault();
-});
-//Сделать цикл для кнопки переключение страницы, что выше
-//1.Конкатенация к для переменной(увеличение индекса)button . $number
-//
-//
-//
-//
-//
+console.log(button.dataset);
