@@ -25,7 +25,7 @@
             <input type="text" name="skills" placeholder="">
             <div class="section section__checkbox">
                 <label>Навыки</label>
-                <input type="checkbox" name="perseverance">Усидчивость
+                <input type="checkbox" name="perseverance" >Усидчивость
                 <input type="checkbox" name="neatness">опрятность
                 <input type="checkbox" name="selflearning">самообучаемость
                 <input type="checkbox" name="industriousness">трудолюбие

@@ -1,5 +1,5 @@
 
-<form method="post"  action="<?="vendor/logic.php"?>" class="box Login">
+<form method="post"  action="list.php" class="box Login">
     <fieldset class="boxBody boxBody">
         <h1 class="title">Войдите</h1>
 
@@ -13,6 +13,8 @@
     </fieldset>
     <footer>
         <button type="submit" class="boxBody btnLogin" id="btnLoginStart"> start</button>
-        <button id="loadButton"> sdfgdst</button>
+           <button  id="loadButton">
+               <a href="index.php">Регистрация</a>
+           </button>
     </footer>
 </form>

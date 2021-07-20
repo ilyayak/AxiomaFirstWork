@@ -1,0 +1,338 @@
+array(7) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(3) "sdf"
+  ["second_name"]=>
+  string(3) "cvb"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-13"
+  ["skills"]=>
+  string(4) "xcvb"
+  ["perseverance"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(10) "Витал"
+  ["second_name"]=>
+  string(22) "Живительный"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "1997-07-14"
+  ["skills"]=>
+  string(0) ""
+  ["perseverance"]=>
+  string(1) "1"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(10) "Витал"
+  ["second_name"]=>
+  string(22) "Живительный"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "1997-07-14"
+  ["skills"]=>
+  string(0) ""
+  ["perseverance"]=>
+  string(1) "1"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(10) "Витал"
+  ["second_name"]=>
+  string(22) "Живительный"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "1997-07-14"
+  ["skills"]=>
+  string(0) ""
+  ["perseverance"]=>
+  string(1) "1"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(12) "Влалит"
+  ["second_name"]=>
+  string(22) "ЖаждуУтолит"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(0) ""
+  ["perseverance"]=>
+  string(1) "1"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(12) "Влалит"
+  ["second_name"]=>
+  string(22) "ЖаждуУтолит"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(4) "sadf"
+  ["perseverance"]=>
+  string(1) "1"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(12) "Влалит"
+  ["second_name"]=>
+  string(22) "ЖаждуУтолит"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(4) "sadf"
+  ["perseverance"]=>
+  string(1) "1"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(12) "Влалит"
+  ["second_name"]=>
+  string(22) "ЖаждуУтолит"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(4) "sadf"
+}
+
+
+array(10) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(12) "Влалит"
+  ["second_name"]=>
+  string(22) "ЖаждуУтолит"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(4) "sadf"
+  ["perseverance"]=>
+  string(1) "1"
+  ["neatness"]=>
+  string(2) "on"
+  ["selflearning"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(12) "Влалит"
+  ["second_name"]=>
+  string(22) "ЖаждуУтолит"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(4) "sadf"
+}
+
+
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(15) "Влалиvzxcv"
+  ["second_name"]=>
+  string(22) "ЖаждуУтолит"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(4) "sadf"
+}
+
+
+array(7) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(7) "nm,nbm,"
+  ["second_name"]=>
+  string(8) "bnm,nbm,"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-08"
+  ["skills"]=>
+  string(8) "bnm,bnm,"
+  ["perseverance"]=>
+  string(2) "on"
+}
+
+
+array(7) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(7) "nm,nbm,"
+  ["second_name"]=>
+  string(8) "bnm,nbm,"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-08"
+  ["skills"]=>
+  string(8) "bnm,bnm,"
+  ["perseverance"]=>
+  string(2) "on"
+}
+
+
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(7) "nm,nbm,"
+  ["second_name"]=>
+  string(8) "bnm,nbm,"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-08"
+  ["skills"]=>
+  string(8) "bnm,bnm,"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(17) "Викентий "
+  ["second_name"]=>
+  string(12) "Петров"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-23"
+  ["skills"]=>
+  string(22) "Грегорианец"
+  ["perseverance"]=>
+  string(2) "on"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(8) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(17) "Викентий "
+  ["second_name"]=>
+  string(12) "Петров"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-23"
+  ["skills"]=>
+  string(22) "Грегорианец"
+  ["perseverance"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(17) "Викентий "
+  ["second_name"]=>
+  string(12) "Петров"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-23"
+  ["skills"]=>
+  string(22) "Грегорианец"
+  ["perseverance"]=>
+  string(2) "on"
+  ["selflearning"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+

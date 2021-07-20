@@ -16,22 +16,18 @@ const result = document.querySelector('#result');
 // };
 
 
-
-loadButton.addEventListener('click', () => {
-    event.preventDefault();
-    const xhr = new XMLHttpRequest();//Сюда запихать FETCH вместо XML
-
-
-    xhr.open('POST', 'index.php');
-    xhr.responseType = "document";
-    xhr.send();
-    xhr.addEventListener('load', () => {
-        if (xhr.status >= 400) {
-            console.log('Что-то пошло не так');
-        } else {
-            console.log(xhr.responseText);
-            result.innerText = xhr.responseText;
-        }
-    });
-
-});
+//
+// loadButton.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     async function loadUsers(){
+//         let response = await fetch("form.php");
+//
+//         if (response.ok) { // если HTTP-статус в диапазоне 200-299
+//             // получаем тело ответа (см. про этот метод ниже)
+//             let json = await response.json();
+//         } else {
+//             alert("Ошибка HTTP: " + response.status);
+//         }
+//     }
+//
+// });

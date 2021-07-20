@@ -1,42 +1,34 @@
 <?php
 
 
-require_once "lconnect.php";
-$login = $_POST['login'];
-$password = $_POST['password'];
+require_once "connect.php";
+$loginSwitch = false;
+    $login = $_POST['login'];
+    $password = $_POST['password'];
+    $forIndex = false;
 
-$query = $pdo->query('SELECT * FROM `login_fields`');
-while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-    $loginT = $row->login;
-    $passwordT = $row->password;
-    $ro = json_decode(json_encode($row), true);
-    foreach ($ro as $r){
-    echo '<pre>';  echo $r;echo '</pre>';
-        if ($loginT === $login && $passwordT === $password) {
-            $forIndex = true;
-            exit;
-        } else {
-            $forIndex = false;
+    $query = $pdo->query('SELECT * FROM `login_fields`');
+
+    while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+        $loginT = $row->login;
+        $passwordT = $row->password;
+        $ro = json_decode(json_encode($row), true);//ОБЪЕКТ в МАССИВ
+
+        foreach ($ro as $r) {
+            if ($loginT === $login && $passwordT === $password) {
+                $forIndex = true;
+            } else {
+                $forIndex = false;
+            }
+        }
+        if ($forIndex) {
+            $whileIndex = true;
         }
     }
-//    echo '<pre>';  echo  $row->login;echo '</pre>';
-//     echo '<pre>';echo $row->password;echo '</pre>';
-    if ($forIndex = true){
 
-        echo '<pre>';
-        echo $login;
-        echo '<pre>';
-        echo $password;
-        echo"ok";
-    }else{
 
-        echo '<pre>';
-        echo $login;
-        echo '<pre>';
-        echo $password;
-        echo"error";
-    }
-}
+
+
 
 //include "../list.php";
 

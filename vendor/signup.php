@@ -1,14 +1,46 @@
 <?php
+function dump($var, $return = false)
+{
+    if ($return)
+        ob_start();
+
+    $flComplex = (is_array($var) || is_object($var));
+
+    if ($flComplex && !$return)
+        echo "<pre>";
+
+    var_dump($var);
+
+    if ($flComplex && !$return)
+        echo "</pre>";
+    echo ($return ? "\n" : "<br />");
+
+    if ($return)
+        return ob_get_clean();
+
+    return null;
+}
+function dumpToFile($var, $fileName = "")
+{
+    if (empty($fileName))
+        $fileName = "__log.log";
+
+    $data = dump($var, true);
+
+    $tempFile = fopen($_SERVER["DOCUMENT_ROOT"]."/".$fileName, "a");
+    fwrite($tempFile, $data."\n");
+    fclose($tempFile);
+}
 
 require_once "connect.php";
 
 $second_name = filter_var($_POST['second_name'],FILTER_SANITIZE_STRING);
 $third_name = filter_var($_POST['third_name'],FILTER_SANITIZE_STRING);
 $birthdate = filter_var($_POST['birthdate'],FILTER_SANITIZE_STRING);
-$perseverance = filter_var($_POST['perseverance'],FILTER_SANITIZE_STRING);
-$neatness = filter_var($_POST['neatness'],FILTER_SANITIZE_STRING);
-$selflearning = filter_var($_POST['selflearning'],FILTER_SANITIZE_STRING);
-$industriousness = filter_var($_POST['industriousness'],FILTER_SANITIZE_STRING);
+$perseverance = filter_var($_POST['perseverance'],FILTER_SANITIZE_STRING)=="on"?1:0;
+$neatness = filter_var($_POST['neatness'],FILTER_SANITIZE_STRING)=="on"?1:0;
+$selflearning = filter_var($_POST['selflearning'],FILTER_SANITIZE_STRING)=="on"?1:0;
+$industriousness = filter_var($_POST['industriousness'],FILTER_SANITIZE_STRING)=="on"?1:0;
 $male = filter_var($_POST['$male'],FILTER_SANITIZE_STRING);
 $name = filter_var($_POST['name'],FILTER_SANITIZE_STRING);
 $skills = filter_var($_POST['skills'],FILTER_SANITIZE_STRING);
@@ -18,6 +50,12 @@ $photo = $_FILES['photo'];
 $photos = $_FILES['photos'];
 
 
+
+
+
+
+
+dumpToFile($_POST);
 //$name = 'Новая категория';
 //$query = "INSERT INTO `b_fields` (`name`) VALUES (:name)";
 //$params = [
@@ -26,53 +64,50 @@ $photos = $_FILES['photos'];
 //$stmt = $pdo->prepare($query);
 //$stmt->execute($params);
 
-//$sql = "INSERT INTO b_fields(  `name`,
-//                    `skills`,
-//                    `male`,
-//                    `second_name`,
-//                    `third_name`,
-//                    `birthdate`,
-//                    `perseverance`,
-//                    `neatness`,
-//                    `selflearning`,
-//                    `industriousness`)
-//                    VALUES(:name,
-//                    :skills,
-//                    :male,
-//                    :second_name,
-//                    :third_name,
-//                    :birthdate,
-//                    :perseverance,
-//                    :neatness,
-//                    :selflearning,
-//                    :industriousness
-//                    )";
-$sql = "INSERT INTO `b_fields`( `name`, `second_name`, `male`, `birthdate`
-                   )
-        VALUES
-                     (:name,:second_name, :male , :birthdate)";
+$sql = "INSERT INTO b_fields(  `name`,
+                    `skills`,
+                    `second_name`,
+                    `third_name`,
+                    `birthdate`,
+                    `perseverance`,
+                    `neatness`,
+                    `selflearning`,
+                    `industriousness`)
+                    VALUES(:name,
+                    :skills,
+                    :second_name,
+                    :third_name,
+                    :birthdate,
+                    :perseverance,
+                    :neatness,
+                    :selflearning,
+                    :industriousness
+                    )";
+//$sql = "INSERT INTO `b_fields`( `name`, `second_name`, `male`, `birthdate`,`perseverance`
+//                   )
+//        VALUES
+//                     (:name,:second_name, :male , :birthdate,:perseverance)";
 
-$params =
-    [':name'=> $name,
-        ':second_name'=> $second_name,
-        ':male'=> $male,
-        ':birthdate'=> $birthdate
-
-    ]
-;
 //$params =
 //    [':name'=> $name,
-//        ':skills' => $skills,
-//        ':male'=> $male,
 //        ':second_name'=> $second_name,
-//        ':third_name'=> $third_name,
+//        ':male'=> $male,
 //        ':birthdate'=> $birthdate,
-//        ':perseverance'=> $perseverance,
-//        ':neatness'=> $neatness,
-//        ':selflearning'=> $selflearning,
-//        ':industriousness'=> $industriousness
+//':perseverance'=> $perseverance
 //    ]
 //;
+$params =
+    [':name'=> $name,
+        ':skills' => $skills,
+        ':second_name'=> $second_name,
+        ':third_name'=> $third_name,
+        ':birthdate'=> $birthdate,
+        ':perseverance'=> $perseverance,
+        ':neatness'=> $neatness,
+        ':selflearning'=> $selflearning,
+        ':industriousness'=> $industriousness
+    ]
+;
 $query = $pdo->prepare($sql);
 //$query->execute($params);
 
