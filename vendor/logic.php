@@ -2,7 +2,10 @@
 
 
 require_once "connect.php";
-$loginSwitch = false;
+//if (!empty($_POST)) {
+
+if (!empty($_POST)){
+    $loginSwitch = false;
     $login = $_POST['login'];
     $password = $_POST['password'];
     $forIndex = false;
@@ -21,13 +24,21 @@ $loginSwitch = false;
                 $forIndex = false;
             }
         }
-        if ($forIndex) {
-            $whileIndex = true;
-        }
+
+        $whileIndex = true;
+
     }
+}else{
+    $whileIndex= false;
+}
 
 
 
+//}
+// else {
+//    $temp = false;
+//    include 'secondIndex.php';
+//}
 
 
 //include "../list.php";

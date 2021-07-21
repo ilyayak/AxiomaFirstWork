@@ -1,9 +1,10 @@
 <?php
-session_start();
+
 require_once "vendor/connect.php";
 require_once 'functions.php';
 require_once "vendor/logic.php";
 
+$startSwitch = false;
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -16,24 +17,18 @@ require_once "vendor/logic.php";
 </head>
 <body>
 <?php
-if (!isset($_SESSION['start'])){
-    $_SESSION['form']=0;
-  $_SESSION['login'] = 0;
+
+if ($loginSwitch){
+     include 'form.php';
+}else {
     include 'login.php';
-
-}else{
-
-    include 'form.php';
 }
-
-
-
-
-
-echo '<pre>';print_r($_SESSION);echo '</pre>';
-
+//if (isset($loginSwitch)) {
+//    if ($loginSwitch) {
+//
+//    }
+//}
 ?>
-
 <footer id="main">
     <button class="forIndex hidden" id="forIndex"><?= $forIndex; ?></button>
 </footer>

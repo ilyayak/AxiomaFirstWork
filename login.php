@@ -1,5 +1,5 @@
 
-<form method="post"  action="list.php" class="box Login">
+<form method="post"  action="prelist.php" class="box Login">
     <fieldset class="boxBody boxBody">
         <h1 class="title">Войдите</h1>
 
@@ -14,7 +14,7 @@
     <footer>
         <button type="submit" class="boxBody btnLogin" id="btnLoginStart"> start</button>
            <button  id="loadButton">
-               <a href="index.php">Регистрация</a>
+               <a href="prelist.php">Регистрация</a>
            </button>
     </footer>
 </form>
