@@ -1,9 +1,9 @@
 <?php
-session_start();
-require_once "vendor/connect.php";
-require_once 'functions.php';
-require_once "vendor/logic.php";
 
+
+require_once 'vendor/connect.php';
+require_once 'functions.php';
+require_once 'vendor/logic.php';
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -16,22 +16,16 @@ require_once "vendor/logic.php";
 </head>
 <body>
 <?php
-if (!isset($_SESSION['start'])){
-    $_SESSION['form']=0;
-  $_SESSION['login'] = 0;
-    include 'login.php';
-
-}else{
-
+if ($loginSwitch) {
     include 'form.php';
+
+} else {
+ include 'login.php';
 }
 
-
-
-
-
-echo '<pre>';print_r($_SESSION);echo '</pre>';
-
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
 ?>
 
 <footer id="main">

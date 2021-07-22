@@ -1,58 +1,22 @@
 <?php
-function dump($var, $return = false)
-{
-    if ($return)
-        ob_start();
 
-    $flComplex = (is_array($var) || is_object($var));
-
-    if ($flComplex && !$return)
-        echo "<pre>";
-
-    var_dump($var);
-
-    if ($flComplex && !$return)
-        echo "</pre>";
-    echo ($return ? "\n" : "<br />");
-
-    if ($return)
-        return ob_get_clean();
-
-    return null;
-}
-function dumpToFile($var, $fileName = "")
-{
-    if (empty($fileName))
-        $fileName = "__log.log";
-
-    $data = dump($var, true);
-
-    $tempFile = fopen($_SERVER["DOCUMENT_ROOT"]."/".$fileName, "a");
-    fwrite($tempFile, $data."\n");
-    fclose($tempFile);
-}
-
+require_once "functions.php";
 require_once "connect.php";
 
-$second_name = filter_var($_POST['second_name'],FILTER_SANITIZE_STRING);
-$third_name = filter_var($_POST['third_name'],FILTER_SANITIZE_STRING);
-$birthdate = filter_var($_POST['birthdate'],FILTER_SANITIZE_STRING);
-$perseverance = filter_var($_POST['perseverance'],FILTER_SANITIZE_STRING)=="on"?1:0;
-$neatness = filter_var($_POST['neatness'],FILTER_SANITIZE_STRING)=="on"?1:0;
-$selflearning = filter_var($_POST['selflearning'],FILTER_SANITIZE_STRING)=="on"?1:0;
-$industriousness = filter_var($_POST['industriousness'],FILTER_SANITIZE_STRING)=="on"?1:0;
-$male = filter_var($_POST['$male'],FILTER_SANITIZE_STRING);
-$name = filter_var($_POST['name'],FILTER_SANITIZE_STRING);
-$skills = filter_var($_POST['skills'],FILTER_SANITIZE_STRING);
+$second_name = filter_var($_POST['second_name'], FILTER_SANITIZE_STRING);
+$third_name = filter_var($_POST['third_name'], FILTER_SANITIZE_STRING);
+$birthdate = filter_var($_POST['birthdate'], FILTER_SANITIZE_STRING);
+$perseverance = filter_var($_POST['perseverance'], FILTER_SANITIZE_STRING) == "on" ? 1 : 0;
+$neatness = filter_var($_POST['neatness'], FILTER_SANITIZE_STRING) == "on" ? 1 : 0;
+$selflearning = filter_var($_POST['selflearning'], FILTER_SANITIZE_STRING) == "on" ? 1 : 0;
+$industriousness = filter_var($_POST['industriousness'], FILTER_SANITIZE_STRING) == "on" ? 1 : 0;
+$male = filter_var($_POST['$male'], FILTER_SANITIZE_STRING);
+$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+$skills = filter_var($_POST['skills'], FILTER_SANITIZE_STRING);
 
 $avatar = $_FILES['avatar'];
 $photo = $_FILES['photo'];
 $photos = $_FILES['photos'];
-
-
-
-
-
 
 
 dumpToFile($_POST);
@@ -97,17 +61,17 @@ $sql = "INSERT INTO b_fields(  `name`,
 //    ]
 //;
 $params =
-    [':name'=> $name,
+    [
+        ':name' => $name,
         ':skills' => $skills,
-        ':second_name'=> $second_name,
-        ':third_name'=> $third_name,
-        ':birthdate'=> $birthdate,
-        ':perseverance'=> $perseverance,
-        ':neatness'=> $neatness,
-        ':selflearning'=> $selflearning,
-        ':industriousness'=> $industriousness
-    ]
-;
+        ':second_name' => $second_name,
+        ':third_name' => $third_name,
+        ':birthdate' => $birthdate,
+        ':perseverance' => $perseverance,
+        ':neatness' => $neatness,
+        ':selflearning' => $selflearning,
+        ':industriousness' => $industriousness
+    ];
 $query = $pdo->prepare($sql);
 //$query->execute($params);
 
@@ -132,4 +96,5 @@ $query->execute($params);
 //$insert_image="INSERT INTO image_table VALUES('$imagetmp','$imagename')";
 //
 //mysql_query($insert_image);
-header("Location:/list.php");
+echo 'вы успешно зарегестрированы';
+header("Location:/index.php");

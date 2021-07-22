@@ -336,3 +336,97 @@ array(9) {
 }
 
 
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(0) ""
+  ["second_name"]=>
+  string(0) ""
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(0) ""
+  ["skills"]=>
+  string(0) ""
+}
+
+
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(0) ""
+  ["second_name"]=>
+  string(0) ""
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(0) ""
+  ["skills"]=>
+  string(0) ""
+}
+
+
+array(8) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(8) "asdfasdf"
+  ["second_name"]=>
+  string(3) "hgj"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-12"
+  ["skills"]=>
+  string(8) "xzcvzxcv"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(8) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(8) "asdfasdf"
+  ["second_name"]=>
+  string(3) "hgj"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-12"
+  ["skills"]=>
+  string(8) "xzcvzxcv"
+  ["neatness"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(18) "Вальдемар"
+  ["second_name"]=>
+  string(18) "Кутиколов"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-08"
+  ["skills"]=>
+  string(9) "asdgadfsg"
+  ["perseverance"]=>
+  string(2) "on"
+  ["selflearning"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+

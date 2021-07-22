@@ -1,44 +1,53 @@
 <?php
 
+require_once "delete.php";
+require_once "connect.php";
+require_once "functions.php";
 require_once "vendor/connect.php";
 include "adminpanel.php";
-echo '<ul>';
-$query = $pdo->query('SELECT * FROM `b_fields` ORDER BY `id` DESC');
-while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-    $html = <<<HTML
-<div class="list">
-<b >{$row->name}</b>
-</div>
+
+$trHTML = <<<HTML
+<tr></tr>
+HTML;
+$htmlTable =
+    <<<HTML
+ 
+ <table border="1px solid">
+   <tr>
+    <th>№пп</th> <th>Пол</th> <th>Имя</th> <th>Фамилия</th> <th>Отчество</th> <th>Навыки</th>   <th>Дата Рождения</th> <th>Усидчивый</th> <th>Обучаемый</th> <th>Трудолюбие</th> <th>Аккуратность</th> <th>ААнг</th> <th>Фото</th>
+   </tr>
+ 
+  
+ HTML;
+
+
+$buttonHTML = <<<HTML
+<tr>
+<td>
+<button>
+  <a href="delete.php">
+ '.$row->id.'
+</a>
+</button>
+</td>
+</tr>
+  
 HTML;
 
-    echo '<li class="list">
-          <b style="margin-right: 9px">' . $row->name . '</b>
-                            
-                                <b style="margin-right: 9px">' . $row->second_name . '</b>
-                               
-                                  <b style="margin-right: 9px">' . $row->skills . '</b>
-                               
-                                  <b style="margin-right: 9px">' . $row->male . '</b>
-                              
-                                  <b style="margin-right: 9px">' . $row->birthdate . '</b>
-                                    
-                                  <b style="margin-right: 9px">' . $row->perseverance . '</b>
-                                
-                                <b style="margin-right: 9px">' . $row->neatness . '</b>
-                             
-                                <b style="margin-right: 9px">' . $row->selflearning . '</b>
-                             
-                                <b style="margin-right: 9px">' . $row->industriousness . '</b>
-                         
-                               
+echo $htmlTable;
 
-            <a href="/delete.php?id=' . $row->id . '">
-
-                    <button class="btn btn-simple">
-                        Удалить
-                    </button>
-            </a>
-           </li>';
+$query = $pdo->query('SELECT * FROM `b_fields`');
+while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+    echo $trHTML;
+    $ruk = objToMass($row);
+    echo $buttonHTML;
+    foreach ($ruk as $ru) {
+        $ruTransed = boolToWord($ru);
+        $newHtml = <<<HTML
+        <td>{$ruTransed}</td>
+        HTML;
+        echo $newHtml;
+    }
 }
-echo '</ul>';
-?>
+echo '</table>';
+

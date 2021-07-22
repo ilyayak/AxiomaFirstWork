@@ -1,6 +1,5 @@
 <?php
-
-
+require_once "functions.php";
 require_once "connect.php";
 //if (!empty($_POST)) {
 
@@ -15,7 +14,7 @@ if (!empty($_POST)){
     while ($row = $query->fetch(PDO::FETCH_OBJ)) {
         $loginT = $row->login;
         $passwordT = $row->password;
-        $ro = json_decode(json_encode($row), true);//ОБЪЕКТ в МАССИВ
+        $ro = objToMass($row);//ОБЪЕКТ в МАССИВ
 
         foreach ($ro as $r) {
             if ($loginT === $login && $passwordT === $password) {
@@ -68,4 +67,3 @@ if (!empty($_POST)){
 //$password = $_POST("password");
 //echo array($login, $password);
 
-?>

@@ -1,7 +1,7 @@
 <?php
 
 
-require_once 'vendor/logic.php';
+include 'vendor/logic.php';
 
 if ($whileIndex) {
     if ($forIndex) {
