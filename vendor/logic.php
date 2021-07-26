@@ -1,9 +1,11 @@
 <?php
+
 require_once "functions.php";
 require_once "connect.php";
 //if (!empty($_POST)) {
-
-if (!empty($_POST)){
+$false=0;
+$true=0;
+if (!empty($_POST)) {
     $loginSwitch = false;
     $login = $_POST['login'];
     $password = $_POST['password'];
@@ -15,55 +17,34 @@ if (!empty($_POST)){
         $loginT = $row->login;
         $passwordT = $row->password;
         $ro = objToMass($row);//ОБЪЕКТ в МАССИВ
-
+//        echo '<pre>';print_r($ro);echo '</pre>';
         foreach ($ro as $r) {
+
             if ($loginT === $login && $passwordT === $password) {
                 $forIndex = true;
+                $true=$true+1;
             } else {
                 $forIndex = false;
+                $false=$false+1;
             }
         }
-
         $whileIndex = true;
-
     }
-}else{
-    $whileIndex= false;
+} else {
+    $whileIndex = false;
 }
-
-
-
-//}
-// else {
-//    $temp = false;
-//    include 'secondIndex.php';
-//}
-
-
-//include "../list.php";
-
-
-//
-//$sql = "INSERT INTO `login_fields`( `login`, `password`)
-//        VALUES
-//                     (:login,:password)";
-//
-//$params =
-//    [
-//        ':login' => $login,
-//        ':password' => $password
-//
-//
-//    ];
-//
-//$query = $pdo->prepare($sql);
-////$query->execute($params);
-//
-//$query->execute($params);
-//header("Location:/");
-
-
-//$login = $_POST("login");
-//$password = $_POST("password");
-//echo array($login, $password);
+echo '<pre>';echo $false/5; echo'false';echo '</pre>';
+echo '<pre>';echo $true/5; echo'true';echo '</pre>';
+if ($whileIndex = true) {
+    if ($forIndex) {
+        $_SESSION['login'] = 1;
+    } else {
+        $loginSwitch = false;
+        echo "Неверный логин или пароль";
+        $_SESSION['errorpass'] = 1;
+    }
+} else {
+    $loginSwitch = true;
+    $_SESSION['loginSwitch'] = 1;
+}
 

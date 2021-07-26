@@ -1,7 +1,8 @@
-<form action="vendor/signup.php" method="post" class="box login" enctype="multipart/form-data">
+<form action="?signup" method="post" class="box login" enctype="multipart/form-data">
     <fieldset class="boxBody">
-
-
+        <button class="">
+           <a href="?win">логин</a>
+        </button>
         <div class="block block__one" id="block__one">
             <select type="radio" id="male" name="male">Ваш пол
                 <option value="1">М</option>

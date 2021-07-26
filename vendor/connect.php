@@ -5,5 +5,3 @@ try {
 }catch(PDOException $e){
 echo "новозможно устоноветь сольдиненьие";
 }
-
-

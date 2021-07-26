@@ -1,7 +1,7 @@
 <?php
 
 
-include 'vendor/logic.php';
+
 
 if ($whileIndex) {
     if ($forIndex) {
@@ -14,5 +14,5 @@ if ($whileIndex) {
 } else {
     $loginSwitch = true;
 $_SESSION['start'] = 1;
-    include "index.php";
+
 }

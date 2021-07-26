@@ -45,8 +45,9 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 1px;
     color: #444;
     font: normal 12px/14px Arial, Helvetica, Sans-serif;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     overflow: hidden;
+    min-width: auto;
 }
 
 .box.login {

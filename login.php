@@ -1,5 +1,5 @@
 
-<form method="post"  action="prelist.php" class="box Login">
+<form method="post"  action="?win" class="box Login">
     <fieldset class="boxBody boxBody">
         <h1 class="title">Войдите</h1>
 
@@ -9,12 +9,11 @@
                    placeholder="Логин">
             <input type="password" name="password" placeholder="Пароль ">
         </div>
-
     </fieldset>
     <footer>
         <button type="submit" class="boxBody btnLogin" id="btnLoginStart"> start</button>
            <button  id="loadButton">
-               <a href="prelist.php">Регистрация</a>
+               <a href="?form">Регистрация</a>
            </button>
     </footer>
 </form>

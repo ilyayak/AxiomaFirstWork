@@ -20,13 +20,6 @@ $photos = $_FILES['photos'];
 
 
 dumpToFile($_POST);
-//$name = 'Новая категория';
-//$query = "INSERT INTO `b_fields` (`name`) VALUES (:name)";
-//$params = [
-//    ':name' => $name
-//];
-//$stmt = $pdo->prepare($query);
-//$stmt->execute($params);
 
 $sql = "INSERT INTO b_fields(  `name`,
                     `skills`,
@@ -47,19 +40,7 @@ $sql = "INSERT INTO b_fields(  `name`,
                     :selflearning,
                     :industriousness
                     )";
-//$sql = "INSERT INTO `b_fields`( `name`, `second_name`, `male`, `birthdate`,`perseverance`
-//                   )
-//        VALUES
-//                     (:name,:second_name, :male , :birthdate,:perseverance)";
 
-//$params =
-//    [':name'=> $name,
-//        ':second_name'=> $second_name,
-//        ':male'=> $male,
-//        ':birthdate'=> $birthdate,
-//':perseverance'=> $perseverance
-//    ]
-//;
 $params =
     [
         ':name' => $name,
@@ -73,28 +54,9 @@ $params =
         ':industriousness' => $industriousness
     ];
 $query = $pdo->prepare($sql);
-//$query->execute($params);
+
 
 $query->execute($params);
 
-//echo '<pre>';
-//print_r($_POST);
-//echo '</pre>';
-
-//echo '<ul>';
-//$query = $pdo->query('SELECT * FROM `b_fields` ORDER BY `id` DESC');
-//while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-//    echo '<li class="list"><b>' .$row->name. '</b></li>';
-//}
-//echo '</ul>';
-//$imagename=$_avatarS["avatar"]["name"];
-//echo '<pre>';print_r($_FILES);echo '<pre>';
-////Получаем содержимое изображения и добавляем к нему слеш
-//$imagetmp=addslashes(file_get_contents($_FILES['file']['tmp_name']));
-//
-////Вставляем имя изображения и содержимое изображения в image_table
-//$insert_image="INSERT INTO image_table VALUES('$imagetmp','$imagename')";
-//
-//mysql_query($insert_image);
 echo 'вы успешно зарегестрированы';
 header("Location:/index.php");
