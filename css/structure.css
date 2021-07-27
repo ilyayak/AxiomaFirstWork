@@ -48,17 +48,23 @@ body {
     margin: 0 auto;
     overflow: hidden;
     min-width: auto;
+    min-width: auto;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.box.login {
+.box .login form{
     display: flex;
     flex-direction: column;
     min-height: auto;
     min-width: auto;
+    max-width: 400px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin: -130px 0 0 -166px;
+
+
 }
 
 .boxBody {
@@ -230,8 +236,12 @@ form input.error {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
+
+    height: fit-content;
+}
+.header__checkbox{
+    display: flex;
+    flex-direction: column;
 }
 
 

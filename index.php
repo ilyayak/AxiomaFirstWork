@@ -20,45 +20,75 @@ require_once 'vendor/logic.php';
 <body>
 <?php
 
+//
+//if (isset($_GET['form'])) {
+//    include 'form.php';
+//} elseif (isset($_GET['win'])) {
+//    include 'vendor/logic.php';
+//    if ($_SESSION['login'] = 1 && !isset($_SESSION['errorpass'])) {
+//        include "vendor/output.php";
+//    } elseif (isset($_SESSION['errorpass']) && isset($_SESSION['login'])) {
+//        include 'login.php';
+//    }
+//} elseif (isset($_GET['filter'])) {
+//    include 'vendor/logic.php';
+//    if ($_SESSION['login'] = 1 && !isset($_SESSION['errorpass'])) {
+//        include "vendor/output.php";
+//    } elseif (isset($_SESSION['errorpass']) && isset($_SESSION['login'])) {
+//        include 'login.php';
+//    }
+//}
+//
+//
+//if (!isset($_GET['form']) && !isset($_GET['win']) && !isset($_GET['filter'])) {
+//    include 'login.php';
+//}
+//
+//
+//if (isset($_GET['exit'])) {
+//    include 'exit.php';
+//    include 'login.php';
+//}
+//if (isset($_GET['delete'])) {
+//    include 'delete.php';
+
 
 if (isset($_GET['form'])) {
     include 'form.php';
-} elseif (isset($_SESSION['login'])) {
-    include 'vendor/logic.php';
-    include "vendor/output.php";
-} elseif ($_SESSION['errorpass'] = 1 && !isset($_SESSION['login'])) {
-    include 'login.php';
+} else {
+    if (isset($_GET['signup'])){
+        include 'vendor/signup.php';
+    }
+    if (!isset($_SESSION['uset'])) {
+        include 'login.php';
+    }
+
+    if (isset($_GET['start']) || isset($_GET['filter'])) {
+        $_SESSION['start'] = 1;
+        include 'vendor/logic.php';
+        if ($_SESSION['uset'] === 1) {
+            include 'vendor/output.php';
+        }elseif ($_SESSION['login']===2){
+            echo 'неверный логин или пароль';
+        }
+    }
 }
-
-if (!isset($_GET['form']) && !isset($_GET['win']) && !isset($_GET['filter'])) {
-    include 'login.php';
-}
-
-
 if (isset($_GET['exit'])) {
     include 'exit.php';
     include 'login.php';
+
+    if (isset($_GET['delete'])) {
+        include 'delete.php';
+    }
 }
-if (isset($_GET['delete'])) {
-    include 'delete.php';
-}
-
-//if (isset($_GET['win'])) {
-//        include 'vendor/logic.php';
-//        if ($_SESSION['login'] = 1 && !isset($_SESSION['errorpass'])) {
-//            include 'vendor/output.php';
-//        } elseif (($_SESSION['errorpass'] = 1) && !isset($_SESSION['login'])) {
-//            include 'login.php';
-//        }
-//    }
-echo '<pre>';
-print_r($_GET);
-echo '</pre>';
-
-
-echo '<pre>';
-print_r($_SESSION);
-echo '</pre>';
+//echo '<pre>';
+//print_r($_GET);
+//echo '</pre>';
+//
+//
+//echo '<pre>';
+//print_r($_SESSION);
+//echo '</pre>';
 ?>
 
 <footer id="main">

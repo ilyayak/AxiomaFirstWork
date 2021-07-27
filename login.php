@@ -1,5 +1,5 @@
 
-<form method="post"  action="?win" class="box Login">
+<form method="post"  action="?start" class="box Login">
     <fieldset class="boxBody boxBody">
         <h1 class="title">Войдите</h1>
 

@@ -59,4 +59,4 @@ $query = $pdo->prepare($sql);
 $query->execute($params);
 
 echo 'вы успешно зарегестрированы';
-header("Location:/index.php");
+

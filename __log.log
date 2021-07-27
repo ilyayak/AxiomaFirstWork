@@ -430,3 +430,139 @@ array(9) {
 }
 
 
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(0) ""
+  ["second_name"]=>
+  string(0) ""
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(0) ""
+  ["skills"]=>
+  string(0) ""
+}
+
+
+array(8) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(16) "Владемер"
+  ["second_name"]=>
+  string(16) "Муравьев"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-20"
+  ["skills"]=>
+  string(0) ""
+  ["perseverance"]=>
+  string(2) "on"
+  ["selflearning"]=>
+  string(2) "on"
+}
+
+
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(0) ""
+  ["second_name"]=>
+  string(0) ""
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(0) ""
+  ["skills"]=>
+  string(0) ""
+}
+
+
+array(10) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(6) "Сын"
+  ["second_name"]=>
+  string(12) "Собаки"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-04"
+  ["skills"]=>
+  string(0) ""
+  ["perseverance"]=>
+  string(2) "on"
+  ["neatness"]=>
+  string(2) "on"
+  ["selflearning"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(14) "Махатма"
+  ["second_name"]=>
+  string(10) "Ганди"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-02"
+  ["skills"]=>
+  string(0) ""
+  ["perseverance"]=>
+  string(2) "on"
+  ["neatness"]=>
+  string(2) "on"
+  ["selflearning"]=>
+  string(2) "on"
+}
+
+
+array(9) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(14) "Матумбо"
+  ["second_name"]=>
+  string(16) "Кукумбер"
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(10) "2021-07-26"
+  ["skills"]=>
+  string(0) ""
+  ["neatness"]=>
+  string(2) "on"
+  ["selflearning"]=>
+  string(2) "on"
+  ["industriousness"]=>
+  string(2) "on"
+}
+
+
+array(6) {
+  ["male"]=>
+  string(1) "1"
+  ["name"]=>
+  string(0) ""
+  ["second_name"]=>
+  string(0) ""
+  ["third_name"]=>
+  string(0) ""
+  ["birthdate"]=>
+  string(0) ""
+  ["skills"]=>
+  string(0) ""
+}
+
+

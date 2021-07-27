@@ -1,8 +1,8 @@
 <?php
+
 require_once "vendor/connect.php";
 require_once "vendor/output.php";
-if (isset($_GET['filter'])){
-
+if (isset($_GET['filter'])) {
 }
 echo $htmlTable;
 
