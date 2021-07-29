@@ -1,11 +1,12 @@
 <?php
 
-include DIR_SYSTEM."templates/adminpanel.php";
-require_once DIR_SYSTEM."component/delete.php";
+include DIR_SYSTEM . "templates/adminpanel.php";
+require_once DIR_SYSTEM . "component/delete.php";
 require_once "connect.php";
-require_once DIR_SYSTEM."functions.php";
+require_once DIR_SYSTEM . "functions.php";
 require_once 'logic.php';
-require_once DIR_SYSTEM.'vendor/signup.php';
+require_once DIR_SYSTEM . 'vendor/signup.php';
+require_once DIR_SYSTEM . 'functions.php';
 
 
 if ($true = 1) {
@@ -96,33 +97,40 @@ HTML;
     if (isset($_GET['filter'])) {
         $resultString = $_SESSION['filter'];
     } elseif (isset($_GET['sort'])) {
-
-        if ($_GET['sort'] === 'familyup'){
+        if ($_GET['sort'] === 'familyup') {
             $sort = 'second_name';
-           $resultStringType = ' ASC';
-        }elseif ($_GET['sort'] === 'familydown'){
+            $resultStringType = ' ASC';
+        } elseif ($_GET['sort'] === 'familydown') {
             $sort = 'second_name';
             $resultStringType = ' DESC';
-        }elseif ($_GET['sort'] === 'birthdateup'){
+        } elseif ($_GET['sort'] === 'birthdateup') {
             $sort = 'birthdate';
-           $resultStringType = ' ASC';
-        }elseif ($_GET['sort'] === 'birthdatedown'){
+            $resultStringType = ' ASC';
+        } elseif ($_GET['sort'] === 'birthdatedown') {
             $sort = 'birthdate';
-           $resultStringType = ' DESC';
+            $resultStringType = ' DESC';
         }
         $resultStringSort = $resultStringOrderBy . $sort . $resultStringType;
         $resultString = $resultStringSort;
-        }
+    }
 
-
+    $row = array();
     $query = $pdo->query('SELECT * FROM  `b_fields`' . $resultString);
     while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+        $ri = objToMass($row);
+        $ids = array_column($ri, 'name');
+        echo '<pre>';
+        print_r($ri);
+        echo '</pre>';
         echo $trHTML;
         echo $buttonHTML;
+//        echo '<pre>';print_r($row);echo '</pre>';
+
+        $newphoto = <<<HTML
+        <td><img src="{$ri['photo']}"></td>
+        HTML;
 
         foreach ($row as $ru) {
-            echo '<pre>';print_r($ruTransed);echo '</pre>';
-
             $ruTransed = boolToWord($ru);
             $newHtml = <<<HTML
         <td>{$ruTransed}</td>
@@ -130,6 +138,8 @@ HTML;
             echo $newHtml;
         }
     }
+    echo $withRow;
+    echo $newphoto;
     echo '</table>';
 } else {
     echo "ЛОгин или параль не верны";

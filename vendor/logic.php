@@ -1,8 +1,8 @@
 <?php
 
-require_once (DIR_SYSTEM."functions.php");
+require_once(DIR_SYSTEM . "functions.php");
 require_once "connect.php";
-//if (!empty($_POST)) {
+
 $false = 0;
 $true = 0;
 
@@ -18,7 +18,7 @@ if (!empty($_POST)) {
         $loginT = $row->login;
         $passwordT = $row->password;
         $ro = objToMass($row);//ОБЪЕКТ в МАССИВ
-//        echo '<pre>';print_r($ro);echo '</pre>';
+
         foreach ($ro as $r) {
             if ($loginT === $login && $passwordT === $password) {
                 $forIndex = true;
@@ -50,25 +50,3 @@ if ($whileIndex = true) {
     $loginSwitch = true;
     $_SESSION['loginSwitch'] = 1;
 }
-
-//добавление записей в базу данных
-//echo '<pre>';print_r($_POST);echo '</pre>';
-//$sql = "INSERT INTO login_fields( `login`,`password` )
-//                    VALUES(:login,:password)";
-//$params =
-//    [
-//        ':login' => $login,
-//        ':password' => $password,
-//    ];
-//$query = $pdo->prepare($sql);
-//$query->execute($params);
-//
-//$query = $pdo->query('SELECT * FROM `login_fields`');
-//while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-//    $loginT = $row->login;
-//        $passwordT = $row->password;
-//       $ro = objToMass($row);
-//    foreach ($ro as $r) {
-//         echo $r;
-//        }
-//}

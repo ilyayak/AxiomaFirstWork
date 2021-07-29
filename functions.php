@@ -52,14 +52,13 @@ function boolToWord($bar)
     // 1 и 0 превращает в ДА и НЕТ соответственно
 {
     if (isset($bar)) {
-        if (is_numeric($bar)){
+        if (is_numeric($bar)) {
             if ($bar == 1) {
                 $bar = "да";
             } elseif ($bar == 0) {
                 $bar = "нет";
             }
         }
-
     }
 
     return $bar;

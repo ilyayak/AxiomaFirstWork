@@ -51,7 +51,6 @@
             <input type="file" name="photos">
             <button class="button button__step" data-block-target="#block__three">Назад</button>
         </div>
-
     </fieldset>
     <footer>
         <button type="submit" class="btnLogin" id="#startButton"> start</button>

@@ -2,7 +2,7 @@
 
 ob_start();
 session_start();
-define('DIR_SYSTEM', 'F:\www\form.loc/');
+define('DIR_SYSTEM', 'F:/www/form.loc/');
 require_once 'vendor/connect.php';
 require_once 'functions.php';
 require_once 'vendor/logic.php';
@@ -20,8 +20,12 @@ require_once 'vendor/logic.php';
 <body>
 <?php
 
-echo '<pre>';print_r($_GET);echo '</pre>';
-echo '<pre>';print_r($_SESSION);echo '</pre>';
+echo '<pre>';
+print_r($_GET);
+echo '</pre>';
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
 
 if (isset($_GET['form'])) {
     include 'templates/form.php';
@@ -55,7 +59,7 @@ if (isset($_GET['exit'])) {
 ?>
 
 <footer id="main">
-<!--    <button class="forIndex hidden" id="forIndex"></button>-->
+    <!--    <button class="forIndex hidden" id="forIndex"></button>-->
 </footer>
 </body>
 <script src="/js/main.js"></script>
