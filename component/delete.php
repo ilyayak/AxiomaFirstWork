@@ -1,5 +1,5 @@
 <?php
-require_once "vendor/connect.php";
+require_once DIR_SYSTEM."vendor/connect.php";
 
 $id = $_GET['id'];
 

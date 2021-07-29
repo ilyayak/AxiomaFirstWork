@@ -1,11 +1,11 @@
 <?php
 
-require_once "delete.php";
+include DIR_SYSTEM."templates/adminpanel.php";
+require_once DIR_SYSTEM."component/delete.php";
 require_once "connect.php";
-require_once "functions.php";
-require_once "vendor/connect.php";
-include "adminpanel.php";
+require_once DIR_SYSTEM."functions.php";
 require_once 'logic.php';
+require_once DIR_SYSTEM.'vendor/signup.php';
 
 
 if ($true = 1) {
@@ -17,7 +17,7 @@ HTML;
  
  <table border="1px solid">
    <tr>
-    <th>№пп</th> <th>Пол</th> <th>Имя</th> <th>Фамилия</th> <th>Отчество</th> <th>Личный качества</th>   <th>Дата Рождения</th> <th>Усидчивый</th> <th>Трудолюбивый</th> <th>Обучаемый</th> <th>Аккуратность</th> <th>ААнг</th> <th>Фото</th>
+    <th>№пп</th> <th>Пол</th> <th>Имя</th> <th>Фамилия <button><a href="?sort=familyup">↑</a></button><button><a href="?sort=familydown">↓</a></button></th> <th>Отчество</th> <th>Личный качества</th>   <th>Дата Рождения <button><a href="?sort=birthdateup">↑</a></button><button><a href="?sort=birthdatedown">↓</a></button></th> <th>Усидчивый</th> <th>Трудолюбивый</th> <th>Обучаемый</th> <th>Аккуратность</th> <th>ААнг</th> <th>Фото</th>
    </tr>
  
   
@@ -51,6 +51,7 @@ HTML;
     $sumName = '';
     $equalOne = "=1";
     $resultStringWHERE = 'WHERE ';
+    $resultStringOrderBy = ' ORDER BY ';
     $resultStringAND = '';
 
 
@@ -89,42 +90,46 @@ HTML;
         $sumName .= $name . $equalOne . $resultStringAND . ' ';
     }
 
-    $resultString = $resultStringWHERE . $sumName;
-
-    function changer($change)
-    {
-        if ($change = 1) {
-        }
-    }
-
+    $sortVar = $_GET['sort'];
+    $resultStringFilter = $resultStringWHERE . $sumName;
+    $_SESSION['filter'] = $resultStringFilter;
     if (isset($_GET['filter'])) {
-        $query = $pdo->query('SELECT * FROM  `b_fields`' . $resultString);
-        while ($row = $query->fetch()) {
-            echo $trHTML;
-            echo $buttonHTML;
-            foreach ($row as $ru) {
-                $ruTransed = boolToWord($ru);
-                $newHtml = <<<HTML
-        <td>{$ruTransed}</td>
-        HTML;
-                echo $newHtml;
-            }
+        $resultString = $_SESSION['filter'];
+    } elseif (isset($_GET['sort'])) {
+
+        if ($_GET['sort'] === 'familyup'){
+            $sort = 'second_name';
+           $resultStringType = ' ASC';
+        }elseif ($_GET['sort'] === 'familydown'){
+            $sort = 'second_name';
+            $resultStringType = ' DESC';
+        }elseif ($_GET['sort'] === 'birthdateup'){
+            $sort = 'birthdate';
+           $resultStringType = ' ASC';
+        }elseif ($_GET['sort'] === 'birthdatedown'){
+            $sort = 'birthdate';
+           $resultStringType = ' DESC';
         }
-    } else {
-        $query = $pdo->query('SELECT * FROM `b_fields`');
-        while ($row = $query->fetch()) {
-            echo $trHTML;
-            echo $buttonHTML;
-            foreach ($row as $ru) {
-                $ruTransed = boolToWord($ru);
-                $newHtml = <<<HTML
+        $resultStringSort = $resultStringOrderBy . $sort . $resultStringType;
+        $resultString = $resultStringSort;
+        }
+
+
+    $query = $pdo->query('SELECT * FROM  `b_fields`' . $resultString);
+    while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+        echo $trHTML;
+        echo $buttonHTML;
+
+        foreach ($row as $ru) {
+            echo '<pre>';print_r($ruTransed);echo '</pre>';
+
+            $ruTransed = boolToWord($ru);
+            $newHtml = <<<HTML
         <td>{$ruTransed}</td>
         HTML;
-                echo $newHtml;
-            }
+            echo $newHtml;
         }
     }
-
     echo '</table>';
 } else {
     echo "ЛОгин или параль не верны";

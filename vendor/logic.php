@@ -1,6 +1,6 @@
 <?php
 
-require_once "functions.php";
+require_once (DIR_SYSTEM."functions.php");
 require_once "connect.php";
 //if (!empty($_POST)) {
 $false = 0;

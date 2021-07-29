@@ -2,7 +2,7 @@
 
 ob_start();
 session_start();
-
+define('DIR_SYSTEM', 'F:\www\form.loc/');
 require_once 'vendor/connect.php';
 require_once 'functions.php';
 require_once 'vendor/logic.php';
@@ -20,79 +20,42 @@ require_once 'vendor/logic.php';
 <body>
 <?php
 
-//
-//if (isset($_GET['form'])) {
-//    include 'form.php';
-//} elseif (isset($_GET['win'])) {
-//    include 'vendor/logic.php';
-//    if ($_SESSION['login'] = 1 && !isset($_SESSION['errorpass'])) {
-//        include "vendor/output.php";
-//    } elseif (isset($_SESSION['errorpass']) && isset($_SESSION['login'])) {
-//        include 'login.php';
-//    }
-//} elseif (isset($_GET['filter'])) {
-//    include 'vendor/logic.php';
-//    if ($_SESSION['login'] = 1 && !isset($_SESSION['errorpass'])) {
-//        include "vendor/output.php";
-//    } elseif (isset($_SESSION['errorpass']) && isset($_SESSION['login'])) {
-//        include 'login.php';
-//    }
-//}
-//
-//
-//if (!isset($_GET['form']) && !isset($_GET['win']) && !isset($_GET['filter'])) {
-//    include 'login.php';
-//}
-//
-//
-//if (isset($_GET['exit'])) {
-//    include 'exit.php';
-//    include 'login.php';
-//}
-//if (isset($_GET['delete'])) {
-//    include 'delete.php';
-
+echo '<pre>';print_r($_GET);echo '</pre>';
+echo '<pre>';print_r($_SESSION);echo '</pre>';
 
 if (isset($_GET['form'])) {
-    include 'form.php';
+    include 'templates/form.php';
 } else {
-    if (isset($_GET['signup'])){
+    if (isset($_GET['signup'])) {
         include 'vendor/signup.php';
     }
+
     if (!isset($_SESSION['uset'])) {
-        include 'login.php';
+        include 'templates/login.php';
     }
 
-    if (isset($_GET['start']) || isset($_GET['filter'])) {
+    if (isset($_GET['start']) || isset($_GET['filter']) || isset($_GET['sort'])) {
         $_SESSION['start'] = 1;
         include 'vendor/logic.php';
         if ($_SESSION['uset'] === 1) {
             include 'vendor/output.php';
-        }elseif ($_SESSION['login']===2){
+        } elseif ($_SESSION['login'] === 2) {
             echo 'неверный логин или пароль';
         }
     }
 }
 if (isset($_GET['exit'])) {
-    include 'exit.php';
-    include 'login.php';
+    include 'session/exit.php';
+    include 'templates/login.php';
 
     if (isset($_GET['delete'])) {
-        include 'delete.php';
+        include 'component/delete.php';
     }
 }
-//echo '<pre>';
-//print_r($_GET);
-//echo '</pre>';
-//
-//
-//echo '<pre>';
-//print_r($_SESSION);
-//echo '</pre>';
 ?>
 
 <footer id="main">
-    <button class="forIndex hidden" id="forIndex"><?= $forIndex; ?></button>
+<!--    <button class="forIndex hidden" id="forIndex"></button>-->
 </footer>
 </body>
 <script src="/js/main.js"></script>

@@ -234,16 +234,24 @@ form input.error {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-
     height: fit-content;
 }
-.header__checkbox{
+.header__checkbox {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    -webkit-columns: 20px 3;
+    -moz-columns: 20px 3;
+    columns: 10px 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
 }
-
 
 .slow {
     transition: 1200ms;

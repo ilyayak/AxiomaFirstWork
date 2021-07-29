@@ -19,8 +19,6 @@
                 Дальше
             </button>
         </div>
-        dsg4g24gg
-
         <div class="block block__two hidden" id="block__two">
             <label>Личные качества</label>
             <input type="text" name="skills" placeholder="">
@@ -54,7 +52,6 @@
             <button class="button button__step" data-block-target="#block__three">Назад</button>
         </div>
 
-        <button id="loadButton"> sdfgdst</button>
     </fieldset>
     <footer>
         <button type="submit" class="btnLogin" id="#startButton"> start</button>

@@ -1,568 +1,1228 @@
-array(7) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(3) "sdf"
-  ["second_name"]=>
-  string(3) "cvb"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-13"
-  ["skills"]=>
-  string(4) "xcvb"
-  ["perseverance"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(10) "Витал"
-  ["second_name"]=>
-  string(22) "Живительный"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "1997-07-14"
-  ["skills"]=>
-  string(0) ""
-  ["perseverance"]=>
-  string(1) "1"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(10) "Витал"
-  ["second_name"]=>
-  string(22) "Живительный"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "1997-07-14"
-  ["skills"]=>
-  string(0) ""
-  ["perseverance"]=>
-  string(1) "1"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(10) "Витал"
-  ["second_name"]=>
-  string(22) "Живительный"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "1997-07-14"
-  ["skills"]=>
-  string(0) ""
-  ["perseverance"]=>
-  string(1) "1"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(12) "Влалит"
-  ["second_name"]=>
-  string(22) "ЖаждуУтолит"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(0) ""
-  ["perseverance"]=>
-  string(1) "1"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(12) "Влалит"
-  ["second_name"]=>
-  string(22) "ЖаждуУтолит"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(4) "sadf"
-  ["perseverance"]=>
-  string(1) "1"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(12) "Влалит"
-  ["second_name"]=>
-  string(22) "ЖаждуУтолит"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(4) "sadf"
-  ["perseverance"]=>
-  string(1) "1"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(12) "Влалит"
-  ["second_name"]=>
-  string(22) "ЖаждуУтолит"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(4) "sadf"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(10) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(12) "Влалит"
-  ["second_name"]=>
-  string(22) "ЖаждуУтолит"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(4) "sadf"
-  ["perseverance"]=>
-  string(1) "1"
-  ["neatness"]=>
-  string(2) "on"
-  ["selflearning"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(12) "Влалит"
-  ["second_name"]=>
-  string(22) "ЖаждуУтолит"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(4) "sadf"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(15) "Влалиvzxcv"
-  ["second_name"]=>
-  string(22) "ЖаждуУтолит"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(4) "sadf"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(7) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(7) "nm,nbm,"
-  ["second_name"]=>
-  string(8) "bnm,nbm,"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-08"
-  ["skills"]=>
-  string(8) "bnm,bnm,"
-  ["perseverance"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(7) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(7) "nm,nbm,"
-  ["second_name"]=>
-  string(8) "bnm,nbm,"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-08"
-  ["skills"]=>
-  string(8) "bnm,bnm,"
-  ["perseverance"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(7) "nm,nbm,"
-  ["second_name"]=>
-  string(8) "bnm,nbm,"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-08"
-  ["skills"]=>
-  string(8) "bnm,bnm,"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(17) "Викентий "
-  ["second_name"]=>
-  string(12) "Петров"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-23"
-  ["skills"]=>
-  string(22) "Грегорианец"
-  ["perseverance"]=>
-  string(2) "on"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php99DB.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
 }
 
 
-array(8) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(17) "Викентий "
-  ["second_name"]=>
-  string(12) "Петров"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-23"
-  ["skills"]=>
-  string(22) "Грегорианец"
-  ["perseverance"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(17) "Викентий "
-  ["second_name"]=>
-  string(12) "Петров"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-23"
-  ["skills"]=>
-  string(22) "Грегорианец"
-  ["perseverance"]=>
-  string(2) "on"
-  ["selflearning"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php19C5.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(0) ""
-  ["second_name"]=>
-  string(0) ""
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(0) ""
-  ["skills"]=>
-  string(0) ""
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php2735.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(0) ""
-  ["second_name"]=>
-  string(0) ""
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(0) ""
-  ["skills"]=>
-  string(0) ""
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(44) "C:\OpenServer\userdata\php_upload\phpCC3.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(8) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(8) "asdfasdf"
-  ["second_name"]=>
-  string(3) "hgj"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-12"
-  ["skills"]=>
-  string(8) "xzcvzxcv"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpF223.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(8) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(8) "asdfasdf"
-  ["second_name"]=>
-  string(3) "hgj"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-12"
-  ["skills"]=>
-  string(8) "xzcvzxcv"
-  ["neatness"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpD929.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(18) "Вальдемар"
-  ["second_name"]=>
-  string(18) "Кутиколов"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-08"
-  ["skills"]=>
-  string(9) "asdgadfsg"
-  ["perseverance"]=>
-  string(2) "on"
-  ["selflearning"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php4125.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(0) ""
-  ["second_name"]=>
-  string(0) ""
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(0) ""
-  ["skills"]=>
-  string(0) ""
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php7371.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(8) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(16) "Владемер"
-  ["second_name"]=>
-  string(16) "Муравьев"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-20"
-  ["skills"]=>
-  string(0) ""
-  ["perseverance"]=>
-  string(2) "on"
-  ["selflearning"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA2F4.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(0) ""
-  ["second_name"]=>
-  string(0) ""
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(0) ""
-  ["skills"]=>
-  string(0) ""
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php2AE8.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(10) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(6) "Сын"
-  ["second_name"]=>
-  string(12) "Собаки"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-04"
-  ["skills"]=>
-  string(0) ""
-  ["perseverance"]=>
-  string(2) "on"
-  ["neatness"]=>
-  string(2) "on"
-  ["selflearning"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php3DF4.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(14) "Махатма"
-  ["second_name"]=>
-  string(10) "Ганди"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-02"
-  ["skills"]=>
-  string(0) ""
-  ["perseverance"]=>
-  string(2) "on"
-  ["neatness"]=>
-  string(2) "on"
-  ["selflearning"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpACDB.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(9) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(14) "Матумбо"
-  ["second_name"]=>
-  string(16) "Кукумбер"
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(10) "2021-07-26"
-  ["skills"]=>
-  string(0) ""
-  ["neatness"]=>
-  string(2) "on"
-  ["selflearning"]=>
-  string(2) "on"
-  ["industriousness"]=>
-  string(2) "on"
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php10BC.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
 }
 
 
-array(6) {
-  ["male"]=>
-  string(1) "1"
-  ["name"]=>
-  string(0) ""
-  ["second_name"]=>
-  string(0) ""
-  ["third_name"]=>
-  string(0) ""
-  ["birthdate"]=>
-  string(0) ""
-  ["skills"]=>
-  string(0) ""
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
 }
 
 

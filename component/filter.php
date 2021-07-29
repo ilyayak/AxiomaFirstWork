@@ -1,7 +1,7 @@
 <?php
 
-require_once "vendor/connect.php";
-require_once "vendor/output.php";
+require_once DIR_SYSTEM."vendor/connect.php";
+require_once DIR_SYSTEM."vendor/output.php";
 if (isset($_GET['filter'])) {
 }
 echo $htmlTable;
