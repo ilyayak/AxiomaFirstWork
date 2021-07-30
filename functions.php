@@ -48,8 +48,7 @@ function dumpToFile($var, $fileName = "")
     fclose($tempFile);
 }
 
-function boolToWord($bar)
-    // 1 и 0 превращает в ДА и НЕТ соответственно
+function boolToWord($bar) // 1 и 0 превращает в ДА и НЕТ соответственно
 {
     if (isset($bar)) {
         if (is_numeric($bar)) {

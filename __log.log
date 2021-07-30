@@ -1479,3 +1479,1175 @@ array(0) {
 }
 
 
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpC717.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpC776.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA7F0.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA801.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpD268.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpD279.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpB170.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpB171.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpC4BB.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpC4CC.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php8932.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php8933.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA39C.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA39D.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php6089.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php609A.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php4592.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php4593.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php9810.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(16) "Che_seryozny.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php9811.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(281977)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(23) "pexels-dids-3029545.jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php9822.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2276004)
+  }
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php71EB.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php71EC.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php53C2.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php53C3.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php3361.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php3362.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpD3B8.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpD3B9.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpD3BA.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpEBB8.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpEBB9.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpEBBA.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA0C3.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA0C4.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpA0C5.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php5FE2.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php5FE3.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php5FE4.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpCF01.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpCF02.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpCF03.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpC460.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpC461.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpC462.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpF09A.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpF09B.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpF09C.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+}
+
+
+array(0) {
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(0) ""
+    ["type"]=>
+    string(0) ""
+    ["tmp_name"]=>
+    string(0) ""
+    ["error"]=>
+    int(4)
+    ["size"]=>
+    int(0)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpB5D8.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpB5D9.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(0) {
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpDFB9.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpDFBA.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpDFBB.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpF30B.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpF30C.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\phpF30D.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+}
+
+
+array(3) {
+  ["avatar"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (5).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php8D7A.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(2802)
+  }
+  ["photo"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (3).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php8D7B.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(3747)
+  }
+  ["photos"]=>
+  array(5) {
+    ["name"]=>
+    string(31) "Без названия (4).jpg"
+    ["type"]=>
+    string(10) "image/jpeg"
+    ["tmp_name"]=>
+    string(45) "C:\OpenServer\userdata\php_upload\php8D7C.tmp"
+    ["error"]=>
+    int(0)
+    ["size"]=>
+    int(4585)
+  }
+}
+
+
+array(0) {
+}
+
+

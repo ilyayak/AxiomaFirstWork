@@ -24,6 +24,7 @@ function filter_mas($bulk)
 $avatar = $_FILES['avatar'];
 $photo = $_FILES['photo'];
 $photos = $_FILES['photos'];
+
 $_SESSION['file'] = $photo;
 //foreach ($photo as $key => $ses){
 //    echo '<pre>';echo $key;echo '</pre>';
@@ -34,13 +35,30 @@ dumpToFile($_FILES);
 echo '<pre>';
 print_r($photo);
 echo '</pre>';
+echo '<pre>';
+print_r($avatar);
+echo '</pre>';
 if (!is_dir(DIR_SYSTEM . 'uploads')) {
     mkdir(DIR_SYSTEM . 'uploads', 0777, true);
 }
+
+
+
 $filename = time() . $photo['name'];
 move_uploaded_file($photo['tmp_name'], DIR_SYSTEM . "uploads/" . $filename);
 $photoDir = "uploads/" . $filename;
 echo $photoDir;
+
+$filename = time() . $avatar['name'];
+move_uploaded_file($avatar['tmp_name'], DIR_SYSTEM . "uploads/" . $filename);
+$avatarDir = "uploads/" . $filename;
+echo $avatarDir;
+
+$filename = time() . $photos['name'];
+move_uploaded_file($photos['tmp_name'], DIR_SYSTEM . "uploads/" . $filename);
+$photosDir = "uploads/" . $filename;
+echo $photosDir;
+
 
 $sql = "INSERT INTO b_fields(  `name`,
                     `skills`,
@@ -51,7 +69,9 @@ $sql = "INSERT INTO b_fields(  `name`,
                     `neatness`,
                     `selflearning`,
                     `industriousness`,
-                     `photo`)
+                     `avatar`,
+                     `photo`,
+                     `photos`)
                     VALUES(:name,
                     :skills,
                     :second_name,
@@ -61,7 +81,9 @@ $sql = "INSERT INTO b_fields(  `name`,
                     :neatness,
                     :selflearning,
                     :industriousness,
-                    :photo
+                    :avatar,     
+                    :photo,
+                    :photos
                     )";
 
 $params =
@@ -75,7 +97,9 @@ $params =
         ':neatness' => $neatness,
         ':selflearning' => $selflearning,
         ':industriousness' => $industriousness,
-        ':photo' => $photoDir
+        ':avatar' => $avatarDir,
+        ':photo' => $photoDir,
+        ':photos' => $photosDir
     ];
 $query = $pdo->prepare($sql);
 

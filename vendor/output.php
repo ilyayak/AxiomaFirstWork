@@ -18,7 +18,7 @@ HTML;
  
  <table border="1px solid">
    <tr>
-    <th>№пп</th> <th>Пол</th> <th>Имя</th> <th>Фамилия <button><a href="?sort=familyup">↑</a></button><button><a href="?sort=familydown">↓</a></button></th> <th>Отчество</th> <th>Личный качества</th>   <th>Дата Рождения <button><a href="?sort=birthdateup">↑</a></button><button><a href="?sort=birthdatedown">↓</a></button></th> <th>Усидчивый</th> <th>Трудолюбивый</th> <th>Обучаемый</th> <th>Аккуратность</th> <th>ААнг</th> <th>Фото</th>
+    <th>№пп</th> <th>Пол</th> <th>Имя</th> <th>Фамилия <button><a href="?sort=familyup">↑</a></button><button><a href="?sort=familydown">↓</a></button></th> <th>Отчество</th> <th>Личный качества</th>   <th>Дата Рождения <button><a href="?sort=birthdateup">↑</a></button><button><a href="?sort=birthdatedown">↓</a></button></th> <th>Усидчивый</th> <th>Трудолюбивый</th> <th>Обучаемый</th> <th>Аккуратность</th> <th>Аватар</th> <th>Фото</th> <th>Фоточки</th>
    </tr>
  
   
@@ -126,20 +126,33 @@ HTML;
         echo $buttonHTML;
 //        echo '<pre>';print_r($row);echo '</pre>';
 
-        $newphoto = <<<HTML
-        <td><img src="{$ri['photo']}"></td>
-        HTML;
 
         foreach ($row as $ru) {
             $ruTransed = boolToWord($ru);
-            $newHtml = <<<HTML
-        <td>{$ruTransed}</td>
-        HTML;
-            echo $newHtml;
+            $ruTransSTRVAL = strval($ruTransed);
+            if (is_string($ruTransed)){
+                if (!strpbrk($ruTransSTRVAL,"/")){
+                    $triggerHTML = <<<HTML
+                     <td>{$ruTransed}</td>
+                     HTML;
+                    echo "не путь";
+                }else{
+                    $photoPath = "uploads".strpbrk($ruTransSTRVAL,"/");
+                    echo $photoPath;
+                    $triggerHTML = <<<HTML
+                     <td><img src="{$photoPath}"></td>
+                     HTML;
+
+                }
+
+                echo $ruTrans;
+            }
+
+            echo $triggerHTML;
         }
     }
     echo $withRow;
-    echo $newphoto;
+//    echo $newphoto;
     echo '</table>';
 } else {
     echo "ЛОгин или параль не верны";
