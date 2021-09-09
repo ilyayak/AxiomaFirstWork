@@ -9,6 +9,13 @@ require_once DIR_SYSTEM . 'vendor/signup.php';
 require_once DIR_SYSTEM . 'functions.php';
 
 
+$id = $_GET['id'];
+
+$sql = 'DELETE FROM `b_fields` WHERE `id` = ?';
+$query = $pdo->prepare($sql);
+$query->execute([$id]);
+
+
 if ($true = 1) {
     $trHTML = <<<HTML
 <tr></tr>
@@ -18,28 +25,14 @@ HTML;
  
  <table border="1px solid">
    <tr>
-    <th>№пп</th> <th>Пол</th> <th>Имя</th> <th>Фамилия <button><a href="?sort=familyup">↑</a></button><button><a href="?sort=familydown">↓</a></button></th> <th>Отчество</th> <th>Личный качества</th>   <th>Дата Рождения <button><a href="?sort=birthdateup">↑</a></button><button><a href="?sort=birthdatedown">↓</a></button></th> <th>Усидчивый</th> <th>Трудолюбивый</th> <th>Обучаемый</th> <th>Аккуратность</th> <th>Аватар</th> <th>Фото</th> <th>Фоточки</th>
+    <th>№пп</th> <th>Пол</th> <th>Имя</th> <th>Фамилия <a href="?sort=familyup"><button>↑</button></a><a href="?sort=familydown"><button>↓</button></a></th> <th>Отчество</th> <th>Личный качества</th>   <th>Дата Рождения <a href="?sort=birthdateup"><button>↑</button></a><a href="?sort=birthdatedown"><button>↓</button></a></th> <th>Усидчивый</th> <th>Трудолюбивый</th> <th>Обучаемый</th> <th>Аккуратность</th> <th>Аватар</th> <th>Фото</th> <th>Фоточки</th>
    </tr>
  
   
  HTML;
 
-    $buttonHTML = <<<HTML
-<tr>
-<td>
-<button>
-  <a href="delete.php">
- '.$row->id.'
-</a>
-</button>
-</td>
-</tr>
-  
-HTML;
-//echo '<pre>';print_r($_POST);echo '</pre>';
 
 
-    echo $htmlTable;
 
     $perseverance = filter_var($_POST['perseverance'], FILTER_SANITIZE_STRING) == "on" ? 1 : 0;
     $neatness = filter_var($_POST['neatness'], FILTER_SANITIZE_STRING) == "on" ? 1 : 0;
@@ -115,47 +108,67 @@ HTML;
     }
 
     $row = array();
-    $query = $pdo->query('SELECT * FROM  `b_fields`' . $resultString);
-    while ($row = $query->fetch(PDO::FETCH_OBJ)) {
-        $ri = objToMass($row);
-        $ids = array_column($ri, 'name');
-        echo '<pre>';
-        print_r($ri);
-        echo '</pre>';
-        echo $trHTML;
-        echo $buttonHTML;
-//        echo '<pre>';print_r($row);echo '</pre>';
 
 
-        foreach ($row as $ru) {
-            $ruTransed = boolToWord($ru);
-            $ruTransSTRVAL = strval($ruTransed);
-            if (is_string($ruTransed)){
-                if (!strpbrk($ruTransSTRVAL,"/")){
-                    $triggerHTML = <<<HTML
-                     <td>{$ruTransed}</td>
+    if (isset($_SESSION['id'])) {
+
+        include (DIR_SYSTEM.'detail.php');
+    }else {
+        echo $htmlTable;
+        $query = $pdo->query('SELECT * FROM  `b_fields`' . $resultString);
+        while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+            $ri = objToMass($row);
+            $ids = array_column($ri, 'name');
+            echo $trHTML;
+            $buttonHTML =
+                '<tr>
+<td>
+
+  <a href="?delete&id= ' . $row->id . '"><button>f</button>
+</a>
+
+</td>
+</tr>';
+
+            echo $buttonHTML;
+
+            foreach ($row as $ru) {
+                $ruTransed = boolToWord($ru);
+                $ruTransSTRVAL = strval($ruTransed);
+
+                if (is_string($ruTransed)) {
+                    if (!strpbrk($ruTransSTRVAL, "/")) {
+                        $triggerHTML = <<<HTML
+                     <td><a href="?detail&id=$row->id">{$ruTransed}</a></td>
                      HTML;
-                    echo "не путь";
-                }else{
-                    $photoPath = "uploads".strpbrk($ruTransSTRVAL,"/");
-                    echo $photoPath;
-                    $triggerHTML = <<<HTML
+//                    echo "не путь";
+                    } else {
+                        $photoPath = "uploads" . strpbrk($ruTransSTRVAL, "/");
+//                    echo $photoPath;
+                        $triggerHTML = <<<HTML
                      <td><img src="{$photoPath}"></td>
                      HTML;
+                    }
 
+                    echo $ruTrans;
                 }
 
-                echo $ruTrans;
+                echo $triggerHTML;
             }
-
-            echo $triggerHTML;
         }
+        echo $withRow;
+        echo '</table>';
+
     }
-    echo $withRow;
-//    echo $newphoto;
-    echo '</table>';
-} else {
-    echo "ЛОгин или параль не верны";
-}
+    } else {
+        echo "ЛОгин или параль не верны";
+    }
+
+
+
+
+
+
+
 
 

@@ -8,8 +8,8 @@ $true = 0;
 
 if (!empty($_POST)) {
     $loginSwitch = false;
-    $login = $_POST['login'];
-    $password = $_POST['password'];
+    $_SESSION['loginIn'] = $_POST['login'];
+    $_SESSION['passwordIn'] = $_POST['password'];
     $forIndex = false;
 
     $query = $pdo->query('SELECT * FROM `login_fields`');
@@ -20,7 +20,7 @@ if (!empty($_POST)) {
         $ro = objToMass($row);//ОБЪЕКТ в МАССИВ
 
         foreach ($ro as $r) {
-            if ($loginT === $login && $passwordT === $password) {
+            if ($loginT === $_SESSION['loginIn'] && $passwordT === $_SESSION['passwordIn']) {
                 $forIndex = true;
                 $_SESSION['uset'] = 1;
                 $true = $true + 1;
@@ -50,3 +50,7 @@ if ($whileIndex = true) {
     $loginSwitch = true;
     $_SESSION['loginSwitch'] = 1;
 }
+
+
+
+

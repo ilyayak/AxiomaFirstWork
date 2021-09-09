@@ -8,8 +8,7 @@
                 <option value="1">М</option>
                 <option value="2">Ж</option>
             </select>
-            <label>Фото для Аватара</label>
-            <input type="file" name="avatar">
+
             <input type="text" name="name" placeholder="Имя*" data-required="Y">
             <input type="text" name="second_name" placeholder="Фамилия*" data-required="Y">
             <input type="text" name="third_name" placeholder="Отчество">
@@ -19,7 +18,18 @@
                 Дальше
             </button>
         </div>
+
         <div class="block block__two hidden" id="block__two">
+            <label>Фото для Аватара</label>
+            <input type="file" name="avatar">
+            <button class="button button__step" data-block-target="#block__one">Назад</button>
+            <button class="button button__step" data-block-validate="#block__two" data-block-target="#block__three">
+                Дальше
+            </button>
+        </div>
+
+
+        <div class="block block__three hidden" id="block__three">
             <label>Личные качества</label>
             <input type="text" name="skills" placeholder="">
             <div class="section section__checkbox">
@@ -29,16 +39,6 @@
                 <input type="checkbox" name="selflearning">самообучаемость
                 <input type="checkbox" name="industriousness">трудолюбие
             </div>
-            <button class="button button__step" data-block-target="#block__one">Назад</button>
-            <button class="button button__step" data-block-validate="#block__two" data-block-target="#block__three">
-                Дальше
-            </button>
-        </div>
-
-
-        <div class="block block__three hidden" id="block__three">
-            <label>Фото для Аватара</label>
-            <input type="file" name="photo">
             <button class="button button__step" data-block-target="#block__two">Назад</button>
             <button class="button button__step" data-block-validate="#block__three" data-block-target="#block__four">
                 Дальше

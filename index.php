@@ -1,8 +1,8 @@
 <?php
 
-ob_start();
 session_start();
-define('DIR_SYSTEM', 'F:/www/form.loc/');
+
+define('DIR_SYSTEM', $_SERVER["DOCUMENT_ROOT"]."/");
 require_once 'vendor/connect.php';
 require_once 'functions.php';
 require_once 'vendor/logic.php';
@@ -37,24 +37,36 @@ if (isset($_GET['form'])) {
     if (!isset($_SESSION['uset'])) {
         include 'templates/login.php';
     }
+//    if (isset($_GET['detail'])){
+//        $getid = $_GET['id'];
+//        $_SESSION = array_push($_SESSION,'$getid');
+//    }
 
-    if (isset($_GET['start']) || isset($_GET['filter']) || isset($_GET['sort'])) {
+    if (isset($_GET['start']) || isset($_GET['filter']) || isset($_GET['sort']) || isset($_GET['delete']) || isset($_GET['detail'])) {
         $_SESSION['start'] = 1;
         include 'vendor/logic.php';
         if ($_SESSION['uset'] === 1) {
             include 'vendor/output.php';
+
+            if (isset($_GET['delete'])) {
+                include 'component/delete.php';
+            }
         } elseif ($_SESSION['login'] === 2) {
             echo 'неверный логин или пароль';
         }
     }
 }
+if (isset($_GET['detail'])) {
+    $_SESSION['id'] = $_GET['id'];
+    include 'detail.php';
+}
+if (isset($_GET['detail&delete'])) {
+    unset($_SESSION['id']);
+    include 'vendor/output.php';
+}
 if (isset($_GET['exit'])) {
     include 'session/exit.php';
     include 'templates/login.php';
-
-    if (isset($_GET['delete'])) {
-        include 'component/delete.php';
-    }
 }
 ?>
 
